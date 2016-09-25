@@ -214,7 +214,7 @@ header .header-content .header-content-inner p {
     margin-left: auto;
     margin-right: auto;
   }
-  header .header-content .header-content-inner h1 {
+ header .header-content .header-content-inner h1 {
     font-size: 50px;
   }
   header .header-content .header-content-inner p {
@@ -751,4 +751,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', end
 }
 #mem{
     margin-top: 20px;
+}
+.logp{
+    height: 100%;
+    background-image: url(../images/log.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
