@@ -17,6 +17,6 @@ $(document).ready(function(){
     
     $('#cont').on('click',function(event){   
         sessionStorage.setItem('ili','true');
-        $(location).attr('href', 'login.html');
+        $(location).attr('href', 'home.html');
     });
 });
