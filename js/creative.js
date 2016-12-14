@@ -1,32 +1,10 @@
 (function($) {
     "use strict"; // Start of use strict
     
-    $('#cont').bind('click',function(event){    
-        $('.logp').hide();
-            $('nav').show();
-            $('header').show();
-            $('section').show();
-            $('aside').show();
-    });
-    
-    $('#pog').bind('click',function(event){
-        event.preventDefault();
-        var uid = $('#uid').val();
-        var pwd = $('#pwd').val();
-        if(uid==="lifeline" && pwd==="hotandsexy1"){
-            $('#cont').prop('disabled', false);
-        }
-        else{
-            alert('Are you trying to sneak???');
-        }
-    });
-    
     $(document).ready(function(){
-        $('#cont').prop('disabled', true);
-        $('nav').hide();
-    $('header').hide();
-    $('section').hide();
-    $('aside').hide();
+        
+        if(sessionStorage.getItem('ili')==='false' || sessionStorage.getItem('ili')===null)
+            $(location).attr('href', 'index.html');
     });
     
     // jQuery for page scrolling feature - requires jQuery Easing plugin
